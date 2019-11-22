@@ -41,8 +41,12 @@ _responds with all treasures, including the shop name and details_
   - `/api/treasures?sort_by=age`, for example, first result should be the youngest
 
 - default sort order: ascending
+
   - `/api/treasures`, first result should be the cheapest (default)
   - `/api/treasures?order=desc`, for example, first result should be the most expensive
+
+- add the following queries:
+  - colour e.g. `/api/treasures?colour=gold` responds with gold treasures only
 
 ## **POST** `/api/treasures`
 
@@ -106,7 +110,6 @@ _responds with all shops_
   - shop_name
   - shop_owner (the name of the shop's owner)
   - slogan
- 
 
 ### Advanced
 
@@ -121,7 +124,6 @@ _responds with all shops_
 - accept a `limit` query which will override the default limit:
   - `/api/treasures?limit=10`, for example, should send out only 10 treasures
 - add the following queries:
-  - colour e.g. `/api/treasures?colour=gold` responds with gold treasures only
   - max_age e.g. `/api/treasures?max_age=20` responds with treasures under 20 years old only
   - mix_age e.g. `/api/treasures?min_age=20` responds with treasures over 20 years old only
   - max_price e.g. `/api/treasures?max_price=50` responds with treasures under £50 only
