@@ -1,4 +1,4 @@
-const { ownerData, shopData, treasureData } = require("../index.js");
+const { ownerData, shopData, treasureData } = require("../data/index.js");
 
 exports.seed = function(knex) {
   return knex

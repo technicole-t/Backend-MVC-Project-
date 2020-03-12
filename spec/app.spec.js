@@ -14,6 +14,7 @@ describe("/api/treasures", () => {
       .get("/api/treasures")
       .expect(200)
       .then(res => {
+        console.log(res.body);
         const treasure = res.body.treasures[0];
         expect(treasure).to.have.all.keys(
           "treasure_id",
